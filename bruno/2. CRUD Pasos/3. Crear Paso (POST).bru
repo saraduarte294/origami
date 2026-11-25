@@ -1,0 +1,18 @@
+meta {
+  name: 3. Crear Paso (POST)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/origamis/1/pasos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titulo": "Pliegue adicional",
+    "instruccion": "Dobla cuidadosamente la solapa inferior hacia arriba para asegurar la base."
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: 4. Actualizar Origami (PUT)
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/origamis/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "dificultad": "Intermedio",
+    "descripcion": "Casita de papel con puertas dobles mejoradas y techo a dos aguas."
+  }
+}

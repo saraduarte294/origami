@@ -1,0 +1,18 @@
+meta {
+  name: 4. Actualizar Paso (PUT)
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/pasos/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titulo": "Colocación precisa del papel",
+    "instruccion": "Ubica la hoja en una superficie plana con el lado decorado mirando hacia abajo."
+  }
+}

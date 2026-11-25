@@ -1,0 +1,31 @@
+meta {
+  name: 3. Crear Origami (POST)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/origamis
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Cisne Real",
+    "categoria": "Animales",
+    "dificultad": "Fácil",
+    "descripcion": "Figura tradicional elegante con cuello estilizado.",
+    "materiales": "1 hoja cuadrada",
+    "pasos": [
+      {
+        "titulo": "Pliegue base",
+        "instruccion": "Dobla la hoja diagonalmente por la mitad para marcar la línea guía central."
+      },
+      {
+        "titulo": "Doblez cometa",
+        "instruccion": "Dobla ambos bordes adyacentes hacia la línea central formando una cometa."
+      }
+    ]
+  }
+}
