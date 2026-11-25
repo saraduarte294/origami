@@ -1,0 +1,12 @@
+{
+  "name": "origami-root",
+  "version": "1.0.0",
+  "description": "ORIGAMI 3D - Plataforma de Aprendizaje",
+  "scripts": {
+    "test:api": "npm run test:api --prefix backend",
+    "start": "npm start --prefix backend",
+    "backend": "npm start --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "seed": "npm run seed --prefix backend"
+  }
+}
